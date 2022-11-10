@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  background-color: rgb(76, 123, 217);
+
+  img {
+    width: 4rem;
+    height: 3rem;
+    margin: 0.5rem 1rem;
+  }
+}
+
+.pages {
+  display: flex;
+  flex: 1;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+
+  li {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    color: rgb(180, 180, 180);
+    cursor: pointer;
+    // transform-origin: center;
+    transition: color 1s, border-bottom 2s;
+    border-bottom: 1px solid transparent;
+
+    &:hover:not(.active) {
+      color: white;
+      border-bottom: 1px solid white;
+    }
+
+    &.active {
+      color: rgb(55, 24, 99);
+    }
+  }
+}
