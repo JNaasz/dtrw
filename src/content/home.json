@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Welcome to DTRW",
+    "subtitle": "Who, What, When, Where",
+    "body": "The Downtown Runners and Walkers are an informal group of runners and walkers that enjoy running/walking and love the city of Detroit. Each Tuesday - rain or shine - 20 to 40 people ranging in abilities from seasoned marathoners to beginning walkers meet at a different metro Detroit restaurant or bar. After a quick introduction with route instructions, people take off on a course of four to six miles. The run/walk starts at 6:00 pm and afterwards everyone meets for food, drink and the most interesting conversations.",
+    "content": {
+      "type": "event",
+      "details": {
+        "title": "Upcoming Events",
+        "body": "No upcoming events"
+      }
+    }
+  },
+  {
+    "title": "JOIN OUR RUNNING CLUB",
+    "subtitle": "Meet us any Tuesday to come join the fun",
+    "body": "DTRW is a great place to meet new people and explore the city of Detroit. We're a pretty casual and social group so new comers are always welcome to any Tuesday night run. Come join us in person or sign up for our mailing list on our contact page.",
+    "content": {
+      "type": "image",
+      "details": "group-shot.jpg"
+    }
+  }
+]

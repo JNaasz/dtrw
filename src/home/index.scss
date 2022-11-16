@@ -1,0 +1,38 @@
+@import '../common/variables';
+
+.body {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 4rem;
+
+  .behind {
+    background-image: url("../../public/Marathon-Running-Race.jpg");
+    background-size: 100%;
+    position: fixed;
+    top: 4rem;
+    height: 400px;
+    width: 100%;
+  }
+
+  .body-content {
+    z-index: 1;
+
+    .image {
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem;
+
+      img {
+        height: 80%;
+        margin: 0 auto;
+      }
+    }
+
+    .body-cards {
+      background-color: $background;
+    }
+  }
+}

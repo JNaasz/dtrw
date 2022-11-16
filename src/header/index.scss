@@ -1,13 +1,20 @@
+@import '../common/variables';
+
 .header {
   display: flex;
+  align-items: center;
   height: 4rem;
   width: 100%;
-  background-color: rgb(76, 123, 217);
+  background-color: $primary;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid black;
+  box-shadow: 0 -2px 20px black;
 
-  img {
-    width: 4rem;
-    height: 3rem;
-    margin: 0.5rem 1rem;
+  .left-item {
+    color: $secondary;
+    margin-left: 8rem;
   }
 }
 
@@ -19,13 +26,17 @@
   align-items: center;
 
   li {
-    font-size: 1.2rem;
-    margin-right: 1rem;
+    font-size: 1rem;
+    margin-left: 1.5rem;
     color: rgb(180, 180, 180);
     cursor: pointer;
     // transform-origin: center;
     transition: color 1s, border-bottom 2s;
     border-bottom: 1px solid transparent;
+
+    &:last-child {
+      margin-right: 8rem;
+    }
 
     &:hover:not(.active) {
       color: white;

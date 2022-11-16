@@ -1,9 +1,11 @@
 import { useState } from 'react';
 
-import logo from './logo.svg';
+import './common/variables.scss';
 import './App.scss';
-
 import Header from './header/index';
+import Home from './home';
+
+import getContent from './content';
 
 function App() {
   const pages = [
@@ -22,16 +24,13 @@ function App() {
     // });
   }
 
+  const content = getContent(currentPage);
+
   return (
     <div className="App">
       <Header pages={pages} changePageHandler={onChangePage} currentPage={currentPage} />
       <div className="content">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          {
-            pages.find(p => p.key === currentPage).title
-          }
-        </p>
+        <Home content={content}  />
       </div>
     </div>
   );
@@ -45,3 +44,6 @@ header with logo and links - eventually add routing for this? easier to share et
 body
 footer
  */
+
+
+

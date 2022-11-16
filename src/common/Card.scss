@@ -1,0 +1,56 @@
+@import './variables';
+
+.card {
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  padding: 4rem;
+  min-height: 270px;
+
+  .card-details, .card-content {
+    max-width: 500px;
+    width: 45%;
+  }
+
+  .card-details {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid $secondary;
+
+    h4 {
+      color: $text1;
+      margin: 0;
+    }
+
+    h6 {
+      color: $text2;
+      margin: 0;
+    }
+
+    .card-body {
+      flex: 1;
+      font-size: $paragraph;
+      color: $text3;
+      text-align: justify;
+      border-bottom: 3px solid $secondary;
+      margin-bottom: 4px;
+      margin-top: 2.2rem;
+      padding-bottom: 3rem;
+    }
+  }
+
+  .card-content {
+    display: flex;
+    align-items: center;
+
+    img {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}

@@ -1,3 +1,5 @@
+@import './common/variables';
+
 .App {
   text-align: center;
   background-color: #282c34;
@@ -11,7 +13,21 @@
 
   .content {
     flex: 1;
-    padding: 1rem;
+    width: 100%;
+  }
+
+  .body-cards {
+    justify-content: space-between;
+
+    .card:nth-child(odd) {
+      flex-direction: row;
+      text-align: left;
+    }
+  
+    .card:nth-child(even) {
+      flex-direction: row-reverse;
+      text-align: right;
+    }
   }
 }
 
@@ -31,3 +47,4 @@
     transform: rotate(360deg);
   }
 }
+
