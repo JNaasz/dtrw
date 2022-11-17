@@ -1,13 +1,13 @@
 import './index.scss';
+import '../common/parallax.scss';
 
 import Card from '../common/Card';
 
 function Home(props) {
   return (
-    <div className="body">
-      <div className="behind">
-      </div>
-      <div className="body-content">
+    <div className="body parallax">
+      <div className="behind parallax__layer--back"></div>
+      <div className="body-content parallax__layer--base">
         <div className="image">
           <img src="/whiteLarge.png" />
         </div>

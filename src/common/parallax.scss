@@ -1,13 +1,31 @@
 
 // https://keithclark.co.uk/articles/pure-css-parallax-websites/
 
-/*
 .parallax {
   perspective: 1px;
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
 }
+
+.parallax__layer--back {
+  transform: translateZ(-1px);
+  position: absolute;
+  top: -22rem;
+  right: 0;
+  bottom: 0;
+  left: -50vw;
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .parallax__layer {
   position: absolute;
   top: 0;
@@ -15,10 +33,4 @@
   bottom: 0;
   left: 0;
 }
-.parallax__layer--base {
-  transform: translateZ(0);
-}
-.parallax__layer--back {
-  transform: translateZ(-1px);
-}
-*/
+

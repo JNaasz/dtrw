@@ -4,29 +4,30 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  margin-top: 4rem;
+  perspective: 1px;
 
   .behind {
     background-image: url("../../public/Marathon-Running-Race.jpg");
-    background-size: 100%;
-    position: fixed;
-    top: 4rem;
-    height: 400px;
-    width: 100%;
+    background-size: cover; // 100%;
+    position: absolute;
+    background-position: top;
+    height: 800px; // @todo - may need to be rem
+    width: 200vw;
   }
 
   .body-content {
     z-index: 1;
+    transform: translateZ(0);
 
-    .image {
+    .image { 
       background-color: transparent;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 2rem;
+      margin: 6rem;
+      margin-top: 8rem;
 
       img {
-        height: 80%;
         margin: 0 auto;
       }
     }

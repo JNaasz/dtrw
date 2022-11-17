@@ -29,9 +29,9 @@ function App() {
   return (
     <div className="App">
       <Header pages={pages} changePageHandler={onChangePage} currentPage={currentPage} />
-      <div className="content">
+      {/* <div className="content"> */}
         <Home content={content}  />
-      </div>
+      {/* </div> */}
     </div>
   );
 }
