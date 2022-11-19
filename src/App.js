@@ -4,6 +4,7 @@ import './common/variables.scss';
 import './App.scss';
 import Header from './header/index';
 import Home from './home';
+import Calendar from './calendar';
 
 import getContent from './content';
 
@@ -29,9 +30,12 @@ function App() {
   return (
     <div className="App">
       <Header pages={pages} changePageHandler={onChangePage} currentPage={currentPage} />
-      {/* <div className="content"> */}
-        <Home content={content}  />
-      {/* </div> */}
+      {
+        currentPage === 'calendar'
+          ? <Calendar content={content} />
+          : <Home content={content} />
+
+      }
     </div>
   );
 }
